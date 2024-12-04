@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# IntegrationAppTestTask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates integration with services using a backend and frontend architecture. The project consists of two parts:
+- **Backend**: Generates JWT tokens.
+- **Frontend**: Provides a user interface for managing integrations and creating contacts.
 
-## Available Scripts
+# 🛠️ Installation
+### 1. Clone the repository
+```
+git clone https://github.com/EugenMyhed/integrationApp-test-task.git
+cd IntegrationAppTestTask
+```
+### 2. Install dependencies for backend
+Navigate to the integration-backend directory and install dependencies:
 
-In the project directory, you can run:
+```
+cd integration-backend
+npm install
+```
+## Install dependencies for frontend
+Navigate to the integration-frontend directory and install dependencies:
 
-### `npm start`
+```
+cd ../integration-frontend
+npm install
+```
+# 🚀 Running the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run the Backend
+### 1. Ensure you have a .env file in the integration-backend folder with the following variables:
+```
+WORKSPACE_KEY=your_workspace_key
+WORKSPACE_SECRET=your_workspace_secret
+PORT=3001
+```
+### 2. Navigate to the integration-backend directory and start the server:
+```
+cd integration-backend
+node src/server.js
+```
+The server will run at: http://localhost:3001.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Run the Frontend
+### 1.Navigate to the integration-frontend directory and start the React application:
+```
+cd ../integration-frontend
+npm start
+```
 
-### `npm test`
+# ⚙️ Features
+## 1. Backend:
+- **Backend**: Generates JWT tokens.
+## 2. Frontend:
+- **Displays a list of integrations with connect/disconnect functionality.**
+- **Provides a form for creating contacts with integrations.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 🔧 Configuration
+## Environment Variables:
+- **Define WORKSPACE_KEY and WORKSPACE_SECRET in the .env file located in integration-backend.**
+- **These are necessary for interacting with the API integrations.**
+## Ports:
+- **Backend runs on port 3001 by default.**
+- **Frontend runs on port 3000 by default.**
