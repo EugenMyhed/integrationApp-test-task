@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import IntegrationsList from '../integrationList/IntegrationsList';
-import CreateContactForm from '../CreateContactForm/CreateContactForm';
+import CreateContactForm from '../createContactForm/CreateContactForm';
 import useFetchIntegrations from '../../hooks/useFetchIntegrations';
 
 type IntegrationPageProps = {
